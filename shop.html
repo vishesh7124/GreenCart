@@ -22,8 +22,18 @@
           <li><a href="#contact">Contact</a></li>
 
         </ul>
-        <!-- <input type="text" name="search" id="search" /> -->
-        <button class="btn btn-sm">Search</button>
+        
+        <input type="text" placeholder="Search Here...." name="search" id="search" />
+        <div class="dropdown">
+          <button class="dropbtn btn btn-sm">Brands</button>
+          <div class="dropdown-content">
+            <a href="javascript:void(0);" onclick="brandFilter('Flosil')">Flosil</a>
+            <a href="javascript:void(0);" onclick="brandFilter('EcoWare')">EcoWare</a>
+            <a href="javascript:void(0);" onclick="brandFilter('GC')" >GC</a>
+            <a href="javascript:void(0);" onclick="brandFilter('Mondo')" >Mondo</a>
+          </div>
+        </div>
+        <!-- <button class="btn btn-sm">Filter</button> -->
       </div>
 
       <div class="burger">
@@ -65,12 +75,12 @@
             <p class="sectionSubtag text-small"><i class="fa-solid fa-circle-check" style="color: #0cb00f;"></i> Dentist Recommended</p>
               
         </div> -->
-        <div class="box-products">
+        <div class="box-products" >
             <div class="product-image">
                 <img src="/images/kichen-towel.jpeg" alt="Infra" />
             </div>
             <div class="product-des">
-                <p class="sectionSubtag text-small">Sustainable Material</p>
+                <p class="sectionSubtag text-small product-name">Mondo Kitchen Towel</p>
                 <p class="sectionSubtag text-small">Rs.450</p>
                 
             </div>
@@ -85,7 +95,7 @@
                 <img src="/images/face-towel.jpeg" alt="Infra" />
             </div>
             <div class="product-des">
-                <p class="sectionSubtag text-small">GC Face Towel</p>
+                <p class="sectionSubtag text-small product-name">GC Face Towel</p>
                 <p class="sectionSubtag text-small">Rs.370</p>
                 
             </div>
@@ -100,7 +110,7 @@
                 <img src="/images/bamboo.jpeg" alt="Infra" />
             </div>
             <div class="product-des">
-                <p class="sectionSubtag text-small">GC BambooBrite</p>
+                <p class="sectionSubtag text-small product-name">GC BambooBrite</p>
                 <p class="sectionSubtag text-small">Rs.610</p>
                 
             </div>
@@ -130,7 +140,7 @@
                 <img src="/images/dental.jpeg" alt="Infra" />
             </div>
             <div class="product-des">
-                <p class="sectionSubtag text-small">Flosil Dental Picks</p>
+                <p class="sectionSubtag text-small product-name">Flosil Dental Picks</p>
                 <p class="sectionSubtag text-small">Rs.200</p>
 
                 
@@ -146,7 +156,7 @@
                 <img src="/images/sponge.jpeg" alt="Infra" />
             </div>
             <div class="product-des">
-                <p class="sectionSubtag text-small">EcoWare BioSponge</p>
+                <p class="sectionSubtag text-small product-name">EcoWare BioSponge</p>
                 <p class="sectionSubtag text-small">Rs.500</p>
             </div>
             <!-- <img src="/images/kichen-towel.jpeg" alt=""> -->
@@ -160,7 +170,7 @@
                 <img src="/images/trash-bags.jpeg" alt="Infra" />
             </div>
             <div class="product-des">
-                <p class="sectionSubtag text-small">Flosil Trash Bags</p>
+                <p class="sectionSubtag text-small product-name">Flosil Trash Bags</p>
                 <p class="sectionSubtag text-small">Rs.300</p>
                 
             </div>
@@ -175,6 +185,11 @@
         </div> -->
       </p>
     </section>
+
+    <!-- <section class="section bg-product hide" id="services">
+        
+        <p class="text-big text-center " style="color: #1d640a;"> <i class="fa-solid fa-notdef" style="color: #1d640a;"></i>Products Found</p>
+    </section> -->
 
     
 

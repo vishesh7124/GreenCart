@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: rgb(83, 66, 66);
   /* overflow-x: hidden; */
 }
 
@@ -46,7 +47,7 @@ html {
 }
 
 .logo img {
-  width: 69%;
+  width: 160%;
   border: 5px solid rgb(121, 77, 13);
   border-radius: 50px;
 }
@@ -54,21 +55,33 @@ html {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   /* cursor: pointer; */
 }
 
 .nav-list {
-  width: 90%;
+  width: 54%;
   /* background-color: black; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-nav-list {
+  width: 54%;
+  /* background-color: black; */
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
+
 .nav-list li {
+  list-style: none;
+  padding: 34px 51px;
+}
+.right-nav-list li {
   list-style: none;
   padding: 34px 51px;
 }
@@ -80,6 +93,16 @@ html {
   font-family: "Ceviche One", cursive;
 }
 .nav-list li a:hover {
+  text-decoration: none;
+  color: brown;
+}
+.right-nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Ceviche One", cursive;
+}
+.right-nav-list li a:hover {
   text-decoration: none;
   color: brown;
 }
@@ -102,10 +125,16 @@ html {
 }
 
 .background {
-  background: rgba(0, 0, 0, 0.7)
-    url("/images/pngtree-city-buildings-overlooking-photography-picture-image_1272075.jpg");
+  background: rgba(0, 0, 0, 0.7) url("/images/home-back.jpeg");
   background-size: cover;
-  background-blend-mode: darken;
+  background-blend-mode:luminosity;
+}
+.bg-product {
+  /* background: rgb(236, 236, 236); */
+  background: white;
+  /* background: rgb(214 214 214); */
+  background-size: cover;
+  background-blend-mode:luminosity;
 }
 
 .firstSection {
@@ -130,16 +159,21 @@ html {
   justify-content: center;
 }
 
-.secondHalf {
-  width: 41%;
+.product-image {
+  width: 75%;
+  /* object-fit: cover; */
 }
 
-.secondHalf img {
-  width: 60%;
-  border: 2px solid rgb(45 57 98);
+.product-image img {
+  width: 100%;
+  /* border: 2px solid rgb(45 57 98); */
   border-radius: 50px;
   display: block;
   margin: auto;
+}
+
+.product-des{
+  padding: 15px 0px;
 }
 
 .text-big {
@@ -174,6 +208,12 @@ html {
   /* vertical-align: middle; */
 }
 
+.button-buy{
+  display: flex;
+  width: 19vw;
+  justify-content: space-evenly;
+}
+
 .burger {
   display: none;
   position: absolute;
@@ -194,12 +234,36 @@ html {
 }
 
 .section {
-  height: 400px;
+  height: 88vh;
+
   display: flex;
   align-items: center;
-  justify-content: center;
-  max-width: 80%;
+  justify-content: space-around;
+  max-width: 100%;
   margin: auto;
+  
+}
+
+.bg-tooth{
+  background: url(/images/toothbrush.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-cutlery{
+  background: url(/images/cutlery.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-learn{
+  background: url(/images/lean-bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-info{
+  background: url(/images/info.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-left {
@@ -208,6 +272,34 @@ html {
 
 .paras {
   padding: 0px 65px;
+}
+.box-products{
+  padding: 0px 65px;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  width: 19vw;
+  align-items: center;
+  flex-direction: column;
+
+}
+.box-products:hover{
+  background: rgb(214 214 214);
+  border-radius: 20px;
+}
+.paras-footer {
+  padding: 0px 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer{
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .sectionTag {
